@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 
+use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//* Rotte Statiche
 Route::get('/', [PageController::class, 'index'])->name('home');
+
+//* Rotte risorsa train
+Route::get('/train', [TrainController::class, 'index'])->name('train.index');
