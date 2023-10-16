@@ -8,8 +8,7 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index(){
-        $train = Train::all();
+        $trains = Train::all();
         return view('train.index', compact('train'));
-
     }
 }
