@@ -8,7 +8,7 @@ class PageController extends Controller
 {
   public function index()
   {
-    $title = "Homepage";
+    $title = "Home";
     return view('home', compact('title'));
   }
 }
